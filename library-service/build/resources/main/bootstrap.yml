@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: library-service
+  cloud:
+    config:
+      name: library-service
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://localhost:9090
+      username: library
+      password: dogfromhell
