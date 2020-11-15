@@ -1,5 +1,10 @@
 spring:
   profiles: dev
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: library
 
 server:
   port: 9092
